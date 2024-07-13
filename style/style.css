@@ -1,0 +1,232 @@
+
+
+.open-sans-normal{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* shared styles */
+.secondary-bg{
+    background-color: #FFF8F3;
+}
+.text-primary{
+    color: #FD6E0A;
+}
+.dark-2{
+    color: #474747;
+}
+.dark-3{
+    color: #757575;
+}
+
+.btn-primary{
+    background-color: #FD6E0A;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 5px;
+    border: none;
+}
+.section-title{
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+.section-description{
+    font-size: 18px;
+    color: #757575;   
+}
+.text-center{
+    text-align: center;
+}
+
+/* Header styles */
+.header{
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+main section{
+    margin-top: 130px;
+}
+/* Nav bar styles */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 140px;
+}
+.nav-title{
+    font-weight: 800;
+    font-size: 45px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 51px;
+    
+}
+nav li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* banner styels */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 35px 0 200px;
+}
+.banner-content{
+    width: 580px;
+}
+.banner-gritings{
+    font-size: 45px;
+    font-weight: 600;
+}
+.banner-title{
+    font-size: 85px;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 18px;
+}
+.banner-profile-pic{
+    width: 584px;
+}
+
+/* about styles */
+.about{
+    border-radius: 10px;
+    padding: 130px 100px;
+    text-align: center;
+    xxxx
+}
+.about-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.item-title{
+    font-size: 20px;
+}
+.item-description{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* skill section styles */
+.skill{
+    padding: 30px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.skill-description{
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/* resume section styles */
+.resume{
+    margin-bottom: 120px;
+}
+.resume-title{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 64px;
+}
+.resume-container{
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+}
+.resume-cloumn-title{
+    color: #474747;
+    font-size: 30px;
+    font-weight: bold;
+}
+.experience-title{
+    color: #474747;
+    font-size: 25px;
+    font-weight: bold;
+}
+.experience-sub-title{
+    color: #757575;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.experience-description{
+    color: #757575;
+    font-size: 16px;
+}
+.resume hr{
+    margin: 30px 5px;
+}
+.resume-download-cv{
+    margin-top: 50px;
+}
+
+/* footer section styles */
+footer{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+}
+.footer-cloumn{
+    width: 50%;
+}
+footer input[type="text"], footer input[type="email"], footer textarea{
+    height: 64px;
+    border-radius: 5px;
+    color: #757575;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 16px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Responsive medida query */
+.hide{
+    display: none;
+}
+
+@media  screen and (max-width: 576px) {
+        .skills-container ,
+         .resume-container, 
+         footer, 
+         .about-items{
+            flex-direction: column;
+        }
+        footer, .about{
+            padding: 20px;
+        }
+        .footer-cloumn{
+            width: 100%;
+        }
+        footer input[type="text"], footer input[type="email"], footer textarea{
+            width: calc(100% - 40px);
+        }
+}
